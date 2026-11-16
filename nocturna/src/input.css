@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme{
+    --font-sans: 'Open Sans', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+
+    --color-verde-ruta: #059669;
+    --color-naranja-pedal: #F97316;
+    --color-azul-noche: #0F172A;
+    --color-gris-urbano: #334155;
+    --color-blanco-puro: #FFFFFF;
+    --color-amarillo-farol: #FFD166;
+}
+@layer components {
+    .btn-primary {
+        @apply bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-6 rounded-xl transition duration-200 shadow-md focus:outline-none focus:ring-4 focus:ring-emerald-400/50 text-center;
+    }
+}
